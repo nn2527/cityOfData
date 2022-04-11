@@ -1,0 +1,27 @@
+<!-- This project is inspired by the New York street-performer artist, where one needs to give money to the performer in order to receive a "lucky note" from them. So remember to 'drop' money in the input box to get your lucky note for the day! -->
+<script src="https://unpkg.com/vue@3"></script>
+<div id="app">
+  <!--   <ul>
+    <note v-for="note in notes" :note="note"></note>
+  </ul> -->
+  <img src="https://assets.codepen.io/6909773/Screenshot_20220330-172853_Gallery.jpg" class="rotateImage" width="500" height="400" />
+  <br>
+  <h1>Appreciate the artist for her pose</h1>
+  <h2>Please enjoy the pose by this artist and leave her some money so she can continue her art</h2>
+  <div style="width: 45%">
+    <h3>Welcome to Central Park where you see a statue and {{description}} </h3>
+  </div>
+  <br>
+  <input v-model="giveamount"><br><br>
+  <button @click="checkgive">Contribute money 💰</button>
+  <h4>Her total collection so far is ${{money}}</h4>
+  <div v-if="display"> Here's the note you receive from her...<br>
+    <p class="return">{{randomnote}}</p>
+    <hr>
+    Would you like to write a note too?
+    <input v-model="typenote"><br><br>
+    <button @click="addnote">Leave a note 💌</button>
+
+  </div>
+
+</div>
