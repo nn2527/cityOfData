@@ -1,0 +1,55 @@
+.rotateImage {
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.rotateImage {
+  float: right;
+  margin: 20px;
+  padding: 20px;
+}
+.clearfix {
+  overflow: auto;
+}
+.return {
+  font-family: Lora, sans-serif;
+  color: white;
+  font-size: 25px;
+  width: 300px;
+  border: 1px;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  background-image: url("https://i.pinimg.com/736x/89/03/ea/8903eaec3555dc1303d7830774387be3.jpg");
+}
+button {
+  color: #f58d42;
+  background-color: whitesmoke;
+  cursor: pointer;
+  border: 2px double #f5b942;
+  border-radius: 7px;
+}
+button:hover {
+  background-color: #ffe6ee;
+  color: #ff6699;
+  border-color: #ff3377;
+}
+h1,
+h2 {
+  color: #a84432;
+}
+h3 {
+  color: #f54260;
+}
+h4 {
+  color: #f56642;
+}
+body {
+  background: url("https://wallpaperaccess.com/full/1550291.jpg");
+}
